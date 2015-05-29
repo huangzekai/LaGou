@@ -63,6 +63,11 @@
 ///是否匹配某个正则表达式
 - (BOOL)isRegularMatchString:(NSString *)regular;
 
+- (NSString *)md5Lowercase;
+
+//删除空格、回车、TAB
+- (NSString *)stringTrimWhitespace;
+
 @end
 
 #pragma mark - NSDate

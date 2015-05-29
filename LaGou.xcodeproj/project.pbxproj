@@ -9,9 +9,7 @@
 /* Begin PBXBuildFile section */
 		7F78DA121B15C8EE00876801 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F78DA111B15C8EE00876801 /* main.m */; };
 		7F78DA151B15C8EE00876801 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F78DA141B15C8EE00876801 /* AppDelegate.m */; };
-		7F78DA1B1B15C8EE00876801 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F78DA191B15C8EE00876801 /* Main.storyboard */; };
 		7F78DA1D1B15C8EE00876801 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F78DA1C1B15C8EE00876801 /* Images.xcassets */; };
-		7F78DA201B15C8EE00876801 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F78DA1E1B15C8EE00876801 /* LaunchScreen.xib */; };
 		7F78DA501B15C9C500876801 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F78DA3E1B15C9C500876801 /* AFHTTPRequestOperation.m */; };
 		7F78DA511B15C9C500876801 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F78DA401B15C9C500876801 /* AFHTTPRequestOperationManager.m */; };
 		7F78DA521B15C9C500876801 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F78DA421B15C9C500876801 /* AFHTTPSessionManager.m */; };
@@ -51,6 +49,18 @@
 		7F78DAB01B15CAEA00876801 /* HTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F78DAAE1B15CAEA00876801 /* HTMLParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		7F78DAB31B15CB2D00876801 /* KNUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F78DAB21B15CB2D00876801 /* KNUtil.m */; };
 		7F78DAB51B15CB4C00876801 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F78DAB41B15CB4C00876801 /* libxml2.2.dylib */; };
+		7F78DAB81B15D06C00876801 /* KNTMLParserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F78DAB71B15D06C00876801 /* KNTMLParserManager.m */; };
+		7F78DAC81B175ADB00876801 /* BMLoginUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F78DAC71B175ADB00876801 /* BMLoginUser.m */; };
+		7F78DACC1B175B7B00876801 /* LALoginService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F78DACB1B175B7B00876801 /* LALoginService.m */; };
+		7F78DACF1B175E2200876801 /* NSObject+SafeOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F78DACE1B175E2200876801 /* NSObject+SafeOperation.m */; };
+		7F78DAD21B17602100876801 /* LANetInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F78DAD11B17602100876801 /* LANetInterface.m */; };
+		7F78DAD51B177A2C00876801 /* LAMyResumeService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F78DAD41B177A2C00876801 /* LAMyResumeService.m */; };
+		7F78DAD81B181A3200876801 /* LGPositionParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F78DAD71B181A3200876801 /* LGPositionParser.m */; };
+		7F78DADB1B181DDC00876801 /* LGBaseParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F78DADA1B181DDC00876801 /* LGBaseParser.m */; };
+		7F78DADE1B18221800876801 /* LGPositions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F78DADD1B18221800876801 /* LGPositions.m */; };
+		7F78DAE11B1823A700876801 /* LAPosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F78DAE01B1823A700876801 /* LAPosition.m */; };
+		7F78DAE41B18487E00876801 /* LGPositionsService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F78DAE31B18487E00876801 /* LGPositionsService.m */; };
+		7F78DAEC1B189BA700876801 /* LGBaseFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F78DAEB1B189BA700876801 /* LGBaseFile.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,9 +69,7 @@
 		7F78DA111B15C8EE00876801 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7F78DA131B15C8EE00876801 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
 		7F78DA141B15C8EE00876801 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../AppDelegate.m; sourceTree = "<group>"; };
-		7F78DA1A1B15C8EE00876801 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7F78DA1C1B15C8EE00876801 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		7F78DA1F1B15C8EE00876801 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		7F78DA1C1B15C8EE00876801 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Images.xcassets; sourceTree = "<group>"; };
 		7F78DA3D1B15C9C500876801 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		7F78DA3E1B15C9C500876801 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
 		7F78DA3F1B15C9C500876801 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
@@ -141,6 +149,30 @@
 		7F78DAB11B15CB2D00876801 /* KNUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNUtil.h; sourceTree = "<group>"; };
 		7F78DAB21B15CB2D00876801 /* KNUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNUtil.m; sourceTree = "<group>"; };
 		7F78DAB41B15CB4C00876801 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
+		7F78DAB61B15D06C00876801 /* KNTMLParserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNTMLParserManager.h; sourceTree = "<group>"; };
+		7F78DAB71B15D06C00876801 /* KNTMLParserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNTMLParserManager.m; sourceTree = "<group>"; };
+		7F78DAC61B175ADB00876801 /* BMLoginUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMLoginUser.h; sourceTree = "<group>"; };
+		7F78DAC71B175ADB00876801 /* BMLoginUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMLoginUser.m; sourceTree = "<group>"; };
+		7F78DACA1B175B7B00876801 /* LALoginService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LALoginService.h; sourceTree = "<group>"; };
+		7F78DACB1B175B7B00876801 /* LALoginService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LALoginService.m; sourceTree = "<group>"; };
+		7F78DACD1B175E2200876801 /* NSObject+SafeOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SafeOperation.h"; sourceTree = "<group>"; };
+		7F78DACE1B175E2200876801 /* NSObject+SafeOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SafeOperation.m"; sourceTree = "<group>"; };
+		7F78DAD01B17602100876801 /* LANetInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LANetInterface.h; sourceTree = "<group>"; };
+		7F78DAD11B17602100876801 /* LANetInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LANetInterface.m; sourceTree = "<group>"; };
+		7F78DAD31B177A2C00876801 /* LAMyResumeService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAMyResumeService.h; sourceTree = "<group>"; };
+		7F78DAD41B177A2C00876801 /* LAMyResumeService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAMyResumeService.m; sourceTree = "<group>"; };
+		7F78DAD61B181A3200876801 /* LGPositionParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGPositionParser.h; sourceTree = "<group>"; };
+		7F78DAD71B181A3200876801 /* LGPositionParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGPositionParser.m; sourceTree = "<group>"; };
+		7F78DAD91B181DDC00876801 /* LGBaseParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGBaseParser.h; sourceTree = "<group>"; };
+		7F78DADA1B181DDC00876801 /* LGBaseParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGBaseParser.m; sourceTree = "<group>"; };
+		7F78DADC1B18221800876801 /* LGPositions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGPositions.h; sourceTree = "<group>"; };
+		7F78DADD1B18221800876801 /* LGPositions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGPositions.m; sourceTree = "<group>"; };
+		7F78DADF1B1823A700876801 /* LAPosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAPosition.h; sourceTree = "<group>"; };
+		7F78DAE01B1823A700876801 /* LAPosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAPosition.m; sourceTree = "<group>"; };
+		7F78DAE21B18487E00876801 /* LGPositionsService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGPositionsService.h; sourceTree = "<group>"; };
+		7F78DAE31B18487E00876801 /* LGPositionsService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGPositionsService.m; sourceTree = "<group>"; };
+		7F78DAEA1B189BA700876801 /* LGBaseFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGBaseFile.h; sourceTree = "<group>"; };
+		7F78DAEB1B189BA700876801 /* LGBaseFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGBaseFile.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +206,8 @@
 		7F78DA0E1B15C8EE00876801 /* LaGou */ = {
 			isa = PBXGroup;
 			children = (
+				7F78DAC91B175B4200876801 /* Network */,
+				7F78DAC51B175A8F00876801 /* Storage */,
 				7F78DA3B1B15C97D00876801 /* Resource */,
 				7F78DA351B15C93C00876801 /* Common */,
 				7F78DA361B15C93C00876801 /* LAUtil */,
@@ -181,9 +215,6 @@
 				7F78DA381B15C93C00876801 /* Modle */,
 				7F78DA391B15C93C00876801 /* View */,
 				7F78DA3A1B15C93C00876801 /* ViewController */,
-				7F78DA191B15C8EE00876801 /* Main.storyboard */,
-				7F78DA1C1B15C8EE00876801 /* Images.xcassets */,
-				7F78DA1E1B15C8EE00876801 /* LaunchScreen.xib */,
 				7F78DA0F1B15C8EE00876801 /* Supporting Files */,
 			);
 			path = LaGou;
@@ -213,8 +244,12 @@
 		7F78DA361B15C93C00876801 /* LAUtil */ = {
 			isa = PBXGroup;
 			children = (
+				7F78DACD1B175E2200876801 /* NSObject+SafeOperation.h */,
+				7F78DACE1B175E2200876801 /* NSObject+SafeOperation.m */,
 				7F78DAB11B15CB2D00876801 /* KNUtil.h */,
 				7F78DAB21B15CB2D00876801 /* KNUtil.m */,
+				7F78DAEA1B189BA700876801 /* LGBaseFile.h */,
+				7F78DAEB1B189BA700876801 /* LGBaseFile.m */,
 			);
 			path = LAUtil;
 			sourceTree = "<group>";
@@ -231,6 +266,12 @@
 		7F78DA381B15C93C00876801 /* Modle */ = {
 			isa = PBXGroup;
 			children = (
+				7F78DAB61B15D06C00876801 /* KNTMLParserManager.h */,
+				7F78DAB71B15D06C00876801 /* KNTMLParserManager.m */,
+				7F78DAD61B181A3200876801 /* LGPositionParser.h */,
+				7F78DAD71B181A3200876801 /* LGPositionParser.m */,
+				7F78DAD91B181DDC00876801 /* LGBaseParser.h */,
+				7F78DADA1B181DDC00876801 /* LGBaseParser.m */,
 			);
 			path = Modle;
 			sourceTree = "<group>";
@@ -260,6 +301,7 @@
 		7F78DA3B1B15C97D00876801 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				7F78DA1C1B15C8EE00876801 /* Images.xcassets */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -360,6 +402,34 @@
 			path = HTMLParser;
 			sourceTree = "<group>";
 		};
+		7F78DAC51B175A8F00876801 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				7F78DAC61B175ADB00876801 /* BMLoginUser.h */,
+				7F78DAC71B175ADB00876801 /* BMLoginUser.m */,
+				7F78DADC1B18221800876801 /* LGPositions.h */,
+				7F78DADD1B18221800876801 /* LGPositions.m */,
+				7F78DADF1B1823A700876801 /* LAPosition.h */,
+				7F78DAE01B1823A700876801 /* LAPosition.m */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		7F78DAC91B175B4200876801 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				7F78DACA1B175B7B00876801 /* LALoginService.h */,
+				7F78DACB1B175B7B00876801 /* LALoginService.m */,
+				7F78DAD01B17602100876801 /* LANetInterface.h */,
+				7F78DAD11B17602100876801 /* LANetInterface.m */,
+				7F78DAD31B177A2C00876801 /* LAMyResumeService.h */,
+				7F78DAD41B177A2C00876801 /* LAMyResumeService.m */,
+				7F78DAE21B18487E00876801 /* LGPositionsService.h */,
+				7F78DAE31B18487E00876801 /* LGPositionsService.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -417,8 +487,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F78DA1B1B15C8EE00876801 /* Main.storyboard in Resources */,
-				7F78DA201B15C8EE00876801 /* LaunchScreen.xib in Resources */,
 				7F78DA1D1B15C8EE00876801 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,30 +503,41 @@
 				7F78DA831B15C9F400876801 /* SDWebImagePrefetcher.m in Sources */,
 				7F78DA551B15C9C500876801 /* AFURLConnectionOperation.m in Sources */,
 				7F78DA541B15C9C500876801 /* AFSecurityPolicy.m in Sources */,
+				7F78DAEC1B189BA700876801 /* LGBaseFile.m in Sources */,
 				7F78DA7C1B15C9F400876801 /* NSData+ImageContentType.m in Sources */,
 				7F78DA501B15C9C500876801 /* AFHTTPRequestOperation.m in Sources */,
+				7F78DAC81B175ADB00876801 /* BMLoginUser.m in Sources */,
 				7F78DA581B15C9C500876801 /* AFURLSessionManager.m in Sources */,
 				7F78DA841B15C9F400876801 /* UIButton+WebCache.m in Sources */,
 				7F78DA811B15C9F400876801 /* SDWebImageDownloaderOperation.m in Sources */,
 				7F78DAB31B15CB2D00876801 /* KNUtil.m in Sources */,
 				7F78DA7B1B15C9F400876801 /* MKAnnotationView+WebCache.m in Sources */,
 				7F78DA7E1B15C9F400876801 /* SDWebImageCompat.m in Sources */,
+				7F78DADB1B181DDC00876801 /* LGBaseParser.m in Sources */,
 				7F78DAA91B15CA6800876801 /* DEMOSecondViewController.m in Sources */,
 				7F78DA991B15CA3600876801 /* REFrostedContainerViewController.m in Sources */,
 				7F78DAA71B15CA6800876801 /* DEMOMenuViewController.m in Sources */,
 				7F78DA571B15C9C500876801 /* AFURLResponseSerialization.m in Sources */,
 				7F78DA861B15C9F400876801 /* UIImage+MultiFormat.m in Sources */,
 				7F78DA891B15C9F400876801 /* UIImageView+WebCache.m in Sources */,
+				7F78DAD81B181A3200876801 /* LGPositionParser.m in Sources */,
 				7F78DAAF1B15CAEA00876801 /* HTMLNode.m in Sources */,
 				7F78DA151B15C8EE00876801 /* AppDelegate.m in Sources */,
 				7F78DA8A1B15C9F400876801 /* UIView+WebCacheOperation.m in Sources */,
+				7F78DAE41B18487E00876801 /* LGPositionsService.m in Sources */,
+				7F78DAD51B177A2C00876801 /* LAMyResumeService.m in Sources */,
 				7F78DA521B15C9C500876801 /* AFHTTPSessionManager.m in Sources */,
 				7F78DA511B15C9C500876801 /* AFHTTPRequestOperationManager.m in Sources */,
 				7F78DAA61B15CA6800876801 /* DEMOHomeViewController.m in Sources */,
+				7F78DACF1B175E2200876801 /* NSObject+SafeOperation.m in Sources */,
 				7F78DA801B15C9F400876801 /* SDWebImageDownloader.m in Sources */,
+				7F78DAE11B1823A700876801 /* LAPosition.m in Sources */,
+				7F78DADE1B18221800876801 /* LGPositions.m in Sources */,
 				7F78DA9B1B15CA3600876801 /* UIImage+REFrostedViewController.m in Sources */,
 				7F78DA881B15C9F400876801 /* UIImageView+HighlightedWebCache.m in Sources */,
+				7F78DAB81B15D06C00876801 /* KNTMLParserManager.m in Sources */,
 				7F78DA7F1B15C9F400876801 /* SDWebImageDecoder.m in Sources */,
+				7F78DACC1B175B7B00876801 /* LALoginService.m in Sources */,
 				7F78DAB01B15CAEA00876801 /* HTMLParser.m in Sources */,
 				7F78DA9C1B15CA3600876801 /* UIView+REFrostedViewController.m in Sources */,
 				7F78DA871B15C9F400876801 /* UIImage+WebP.m in Sources */,
@@ -470,29 +549,11 @@
 				7F78DA9D1B15CA3600876801 /* UIViewController+REFrostedViewController.m in Sources */,
 				7F78DA981B15CA3600876801 /* RECommonFunctions.m in Sources */,
 				7F78DA9A1B15CA3600876801 /* REFrostedViewController.m in Sources */,
+				7F78DAD21B17602100876801 /* LANetInterface.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		7F78DA191B15C8EE00876801 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7F78DA1A1B15C8EE00876801 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		7F78DA1E1B15C8EE00876801 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7F78DA1F1B15C8EE00876801 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		7F78DA2D1B15C8EE00876801 /* Debug */ = {

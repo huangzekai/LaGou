@@ -7,9 +7,17 @@
 //
 
 #import "AppDelegate.h"
+#import "DEMONavigationController.h"
+#import "DEMOHomeViewController.h"
+#import "DEMOMenuViewController.h"
+#import "LALoginService.h"
+#import "LAMyResumeService.h"
+#import "LGPositionsService.h"
 
 @interface AppDelegate ()
-
+@property (nonatomic) LALoginService *loginService;
+@property (nonatomic) LAMyResumeService *myresumeService;
+@property (nonatomic) LGPositionsService *positionService;
 @end
 
 @implementation AppDelegate
@@ -17,6 +25,33 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    // Create content and menu controllers
+    DEMONavigationController *navigationController = [[DEMONavigationController alloc] initWithRootViewController:[[DEMOHomeViewController alloc] init]];
+    DEMOMenuViewController *menuController = [[DEMOMenuViewController alloc] initWithStyle:UITableViewStylePlain];
+    
+    // Create frosted view controller
+    REFrostedViewController *frostedViewController = [[REFrostedViewController alloc] initWithContentViewController:navigationController menuViewController:menuController];
+    frostedViewController.direction = REFrostedViewControllerDirectionLeft;
+    frostedViewController.liveBlurBackgroundStyle = REFrostedViewControllerLiveBackgroundStyleLight;
+    frostedViewController.liveBlur = YES;
+    frostedViewController.delegate = self;
+    
+    // Make it a root controller
+    self.window.rootViewController = frostedViewController;
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    
+    self.loginService = [[LALoginService alloc]init];
+    [self.loginService loginWithUserName:@"921800467@qq.com" andPassword:@"b19900316c"];
+    
+//    self.myresumeService = [[LAMyResumeService alloc]init];
+//    [self.myresumeService requestMyResume];
+    
+    self.positionService = [[LGPositionsService alloc]init];
+    [self.positionService requestLGPositions];
+    
     return YES;
 }
 
@@ -40,6 +75,31 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)frostedViewController:(REFrostedViewController *)frostedViewController didRecognizePanGesture:(UIPanGestureRecognizer *)recognizer
+{
+    
+}
+
+- (void)frostedViewController:(REFrostedViewController *)frostedViewController willShowMenuViewController:(UIViewController *)menuViewController
+{
+    NSLog(@"willShowMenuViewController");
+}
+
+- (void)frostedViewController:(REFrostedViewController *)frostedViewController didShowMenuViewController:(UIViewController *)menuViewController
+{
+    NSLog(@"didShowMenuViewController");
+}
+
+- (void)frostedViewController:(REFrostedViewController *)frostedViewController willHideMenuViewController:(UIViewController *)menuViewController
+{
+    NSLog(@"willHideMenuViewController");
+}
+
+- (void)frostedViewController:(REFrostedViewController *)frostedViewController didHideMenuViewController:(UIViewController *)menuViewController
+{
+    NSLog(@"didHideMenuViewController");
 }
 
 @end

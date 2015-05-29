@@ -7,6 +7,8 @@
 //
 
 #import "KNUtil.h"
+#import <CommonCrypto/CommonCryptor.h>
+#import <CommonCrypto/CommonKeyDerivation.h>
 
 #define kImagePathExtensionPNG @"png"
 
@@ -127,6 +129,16 @@
     return [dateFormatter dateFromString:self];
 }
 
+//删除空格、回车、TAB
+- (NSString *)stringTrimWhitespace
+{
+    NSCharacterSet *set = [NSCharacterSet whitespaceAndNewlineCharacterSet];
+    NSMutableString *string = [[self stringByTrimmingCharactersInSet:set] mutableCopy];
+    [string replaceOccurrencesOfString:@"\n" withString:@"" options:0 range:NSMakeRange(0, string.length)];
+    [string replaceOccurrencesOfString:@"\t" withString:@"" options:0 range:NSMakeRange(0, string.length)];
+    return string;
+}
+
 - (BOOL)isRegularMatchString:(NSString *)regular
 {
     NSRegularExpression *expression = [NSRegularExpression regularExpressionWithPattern:regular
@@ -137,6 +149,27 @@
                                                     range:NSMakeRange(0, self.length)];
     
     return range.length;
+}
+
+- (NSString *)md5Lowercase
+{
+    return [[self MD5Uppercase] lowercaseString];
+}
+
+- (NSString *)MD5Uppercase {
+    if ([self length] == 0) {
+        return nil;
+    }
+    const char *cStr = [self UTF8String];
+    unsigned char result[16];
+    CC_MD5(cStr, strlen(cStr), result);
+    return [NSString stringWithFormat:
+            @"%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x",
+            result[0], result[1], result[2], result[3],
+            result[4], result[5], result[6], result[7],
+            result[8], result[9], result[10], result[11],
+            result[12], result[13], result[14], result[15]
+            ];
 }
 
 @end
