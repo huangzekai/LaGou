@@ -1,18 +1,18 @@
 //
-//  BMLoginUser.m
+//  LGLoginUser.m
 //  LaGou
 //
 //  Created by kennyhuang on 15/5/28.
 //  Copyright (c) 2015年 kennyhuang. All rights reserved.
 //
 
-#import "BMLoginUser.h"
+#import "LGLoginUser.h"
 
 #define kAccount @"username"
 #define kMd5password @"password"
 #define kRemendMe @"rememberMe"
 
-@implementation BMLoginUser
+@implementation LGLoginUser
 @synthesize username = _username;
 @synthesize password = _password;
 

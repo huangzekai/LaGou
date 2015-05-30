@@ -50,7 +50,7 @@
 		7F78DAB31B15CB2D00876801 /* KNUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F78DAB21B15CB2D00876801 /* KNUtil.m */; };
 		7F78DAB51B15CB4C00876801 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F78DAB41B15CB4C00876801 /* libxml2.2.dylib */; };
 		7F78DAB81B15D06C00876801 /* KNTMLParserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F78DAB71B15D06C00876801 /* KNTMLParserManager.m */; };
-		7F78DAC81B175ADB00876801 /* BMLoginUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F78DAC71B175ADB00876801 /* BMLoginUser.m */; };
+		7F78DAC81B175ADB00876801 /* LGLoginUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F78DAC71B175ADB00876801 /* LGLoginUser.m */; };
 		7F78DACC1B175B7B00876801 /* LALoginService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F78DACB1B175B7B00876801 /* LALoginService.m */; };
 		7F78DACF1B175E2200876801 /* NSObject+SafeOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F78DACE1B175E2200876801 /* NSObject+SafeOperation.m */; };
 		7F78DAD21B17602100876801 /* LANetInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F78DAD11B17602100876801 /* LANetInterface.m */; };
@@ -61,6 +61,10 @@
 		7F78DAE11B1823A700876801 /* LAPosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F78DAE01B1823A700876801 /* LAPosition.m */; };
 		7F78DAE41B18487E00876801 /* LGPositionsService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F78DAE31B18487E00876801 /* LGPositionsService.m */; };
 		7F78DAEC1B189BA700876801 /* LGBaseFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F78DAEB1B189BA700876801 /* LGBaseFile.m */; };
+		7F78DAEF1B18A05400876801 /* LGBaseFile+Storage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F78DAEE1B18A05400876801 /* LGBaseFile+Storage.m */; };
+		7F78DAF21B1979B400876801 /* LGResumeParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F78DAF11B1979B400876801 /* LGResumeParser.m */; };
+		7F78DAF51B198E6200876801 /* LGProjectException.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F78DAF41B198E6200876801 /* LGProjectException.m */; };
+		7F78DAF81B19B69300876801 /* LGRecommendService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F78DAF71B19B69300876801 /* LGRecommendService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -151,8 +155,8 @@
 		7F78DAB41B15CB4C00876801 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
 		7F78DAB61B15D06C00876801 /* KNTMLParserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNTMLParserManager.h; sourceTree = "<group>"; };
 		7F78DAB71B15D06C00876801 /* KNTMLParserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNTMLParserManager.m; sourceTree = "<group>"; };
-		7F78DAC61B175ADB00876801 /* BMLoginUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMLoginUser.h; sourceTree = "<group>"; };
-		7F78DAC71B175ADB00876801 /* BMLoginUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMLoginUser.m; sourceTree = "<group>"; };
+		7F78DAC61B175ADB00876801 /* LGLoginUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGLoginUser.h; sourceTree = "<group>"; };
+		7F78DAC71B175ADB00876801 /* LGLoginUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGLoginUser.m; sourceTree = "<group>"; };
 		7F78DACA1B175B7B00876801 /* LALoginService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LALoginService.h; sourceTree = "<group>"; };
 		7F78DACB1B175B7B00876801 /* LALoginService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LALoginService.m; sourceTree = "<group>"; };
 		7F78DACD1B175E2200876801 /* NSObject+SafeOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SafeOperation.h"; sourceTree = "<group>"; };
@@ -173,6 +177,14 @@
 		7F78DAE31B18487E00876801 /* LGPositionsService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGPositionsService.m; sourceTree = "<group>"; };
 		7F78DAEA1B189BA700876801 /* LGBaseFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGBaseFile.h; sourceTree = "<group>"; };
 		7F78DAEB1B189BA700876801 /* LGBaseFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGBaseFile.m; sourceTree = "<group>"; };
+		7F78DAED1B18A05400876801 /* LGBaseFile+Storage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LGBaseFile+Storage.h"; sourceTree = "<group>"; };
+		7F78DAEE1B18A05400876801 /* LGBaseFile+Storage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LGBaseFile+Storage.m"; sourceTree = "<group>"; };
+		7F78DAF01B1979B400876801 /* LGResumeParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGResumeParser.h; sourceTree = "<group>"; };
+		7F78DAF11B1979B400876801 /* LGResumeParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGResumeParser.m; sourceTree = "<group>"; };
+		7F78DAF31B198E6200876801 /* LGProjectException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGProjectException.h; sourceTree = "<group>"; };
+		7F78DAF41B198E6200876801 /* LGProjectException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGProjectException.m; sourceTree = "<group>"; };
+		7F78DAF61B19B69300876801 /* LGRecommendService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGRecommendService.h; sourceTree = "<group>"; };
+		7F78DAF71B19B69300876801 /* LGRecommendService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGRecommendService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,6 +262,8 @@
 				7F78DAB21B15CB2D00876801 /* KNUtil.m */,
 				7F78DAEA1B189BA700876801 /* LGBaseFile.h */,
 				7F78DAEB1B189BA700876801 /* LGBaseFile.m */,
+				7F78DAED1B18A05400876801 /* LGBaseFile+Storage.h */,
+				7F78DAEE1B18A05400876801 /* LGBaseFile+Storage.m */,
 			);
 			path = LAUtil;
 			sourceTree = "<group>";
@@ -272,6 +286,8 @@
 				7F78DAD71B181A3200876801 /* LGPositionParser.m */,
 				7F78DAD91B181DDC00876801 /* LGBaseParser.h */,
 				7F78DADA1B181DDC00876801 /* LGBaseParser.m */,
+				7F78DAF01B1979B400876801 /* LGResumeParser.h */,
+				7F78DAF11B1979B400876801 /* LGResumeParser.m */,
 			);
 			path = Modle;
 			sourceTree = "<group>";
@@ -405,12 +421,14 @@
 		7F78DAC51B175A8F00876801 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
-				7F78DAC61B175ADB00876801 /* BMLoginUser.h */,
-				7F78DAC71B175ADB00876801 /* BMLoginUser.m */,
+				7F78DAC61B175ADB00876801 /* LGLoginUser.h */,
+				7F78DAC71B175ADB00876801 /* LGLoginUser.m */,
 				7F78DADC1B18221800876801 /* LGPositions.h */,
 				7F78DADD1B18221800876801 /* LGPositions.m */,
 				7F78DADF1B1823A700876801 /* LAPosition.h */,
 				7F78DAE01B1823A700876801 /* LAPosition.m */,
+				7F78DAF31B198E6200876801 /* LGProjectException.h */,
+				7F78DAF41B198E6200876801 /* LGProjectException.m */,
 			);
 			path = Storage;
 			sourceTree = "<group>";
@@ -426,6 +444,8 @@
 				7F78DAD41B177A2C00876801 /* LAMyResumeService.m */,
 				7F78DAE21B18487E00876801 /* LGPositionsService.h */,
 				7F78DAE31B18487E00876801 /* LGPositionsService.m */,
+				7F78DAF61B19B69300876801 /* LGRecommendService.h */,
+				7F78DAF71B19B69300876801 /* LGRecommendService.m */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -503,10 +523,12 @@
 				7F78DA831B15C9F400876801 /* SDWebImagePrefetcher.m in Sources */,
 				7F78DA551B15C9C500876801 /* AFURLConnectionOperation.m in Sources */,
 				7F78DA541B15C9C500876801 /* AFSecurityPolicy.m in Sources */,
+				7F78DAF81B19B69300876801 /* LGRecommendService.m in Sources */,
 				7F78DAEC1B189BA700876801 /* LGBaseFile.m in Sources */,
 				7F78DA7C1B15C9F400876801 /* NSData+ImageContentType.m in Sources */,
 				7F78DA501B15C9C500876801 /* AFHTTPRequestOperation.m in Sources */,
-				7F78DAC81B175ADB00876801 /* BMLoginUser.m in Sources */,
+				7F78DAC81B175ADB00876801 /* LGLoginUser.m in Sources */,
+				7F78DAEF1B18A05400876801 /* LGBaseFile+Storage.m in Sources */,
 				7F78DA581B15C9C500876801 /* AFURLSessionManager.m in Sources */,
 				7F78DA841B15C9F400876801 /* UIButton+WebCache.m in Sources */,
 				7F78DA811B15C9F400876801 /* SDWebImageDownloaderOperation.m in Sources */,
@@ -530,6 +552,7 @@
 				7F78DA511B15C9C500876801 /* AFHTTPRequestOperationManager.m in Sources */,
 				7F78DAA61B15CA6800876801 /* DEMOHomeViewController.m in Sources */,
 				7F78DACF1B175E2200876801 /* NSObject+SafeOperation.m in Sources */,
+				7F78DAF51B198E6200876801 /* LGProjectException.m in Sources */,
 				7F78DA801B15C9F400876801 /* SDWebImageDownloader.m in Sources */,
 				7F78DAE11B1823A700876801 /* LAPosition.m in Sources */,
 				7F78DADE1B18221800876801 /* LGPositions.m in Sources */,
@@ -537,6 +560,7 @@
 				7F78DA881B15C9F400876801 /* UIImageView+HighlightedWebCache.m in Sources */,
 				7F78DAB81B15D06C00876801 /* KNTMLParserManager.m in Sources */,
 				7F78DA7F1B15C9F400876801 /* SDWebImageDecoder.m in Sources */,
+				7F78DAF21B1979B400876801 /* LGResumeParser.m in Sources */,
 				7F78DACC1B175B7B00876801 /* LALoginService.m in Sources */,
 				7F78DAB01B15CAEA00876801 /* HTMLParser.m in Sources */,
 				7F78DA9C1B15CA3600876801 /* UIView+REFrostedViewController.m in Sources */,

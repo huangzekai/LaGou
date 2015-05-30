@@ -46,11 +46,11 @@
     self.loginService = [[LALoginService alloc]init];
     [self.loginService loginWithUserName:@"921800467@qq.com" andPassword:@"b19900316c"];
     
-//    self.myresumeService = [[LAMyResumeService alloc]init];
-//    [self.myresumeService requestMyResume];
+    self.myresumeService = [[LAMyResumeService alloc]init];
+    [self.myresumeService requestMyResume];
     
-    self.positionService = [[LGPositionsService alloc]init];
-    [self.positionService requestLGPositions];
+//    self.positionService = [[LGPositionsService alloc]init];
+//    [self.positionService requestLGPositions];
     
     return YES;
 }

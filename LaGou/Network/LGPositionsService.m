@@ -10,6 +10,7 @@
 #import "AFNetworking.h"
 #import "LANetInterface.h"
 #import "LGPositionParser.h"
+#import "LGBaseFile+Storage.h"
 
 @implementation LGPositionsService
 
@@ -24,6 +25,7 @@
         NSLog(@"--------%@", str);
         LGPositionParser *parser = [[LGPositionParser alloc]initWithHtmlContent:responseObject];
         NSDictionary *positions = [parser parserLGPositions];
+        [LGBaseFile storagePositionData:positions];
         
     }failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"发生错误！%@",error);

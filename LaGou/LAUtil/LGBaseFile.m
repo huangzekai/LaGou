@@ -10,4 +10,18 @@
 
 @implementation LGBaseFile
 
++ (NSString *)documentDirectory
+{
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    return paths[0];
+}
+
++ (NSString *)createPathWithName:(NSString *)name
+{
+    NSString *path = [LGBaseFile documentDirectory];
+    path = [path stringByAppendingPathComponent:name];
+    
+    return path;
+}
+
 @end

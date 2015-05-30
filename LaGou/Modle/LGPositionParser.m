@@ -63,4 +63,9 @@
     return self.positionDict;
 }
 
+- (void)parserRecommandJobs
+{
+    
+}
+
 @end

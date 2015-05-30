@@ -8,10 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import "HTMLParser.h"
+#import "KNUtil.h"
 
 @interface LGBaseParser : NSObject
 
 @property (nonatomic, copy) NSString *htmlContent;
+@property (nonatomic, strong) HTMLParser *parser;
 
 - (LGBaseParser *)initWithHtmlContent:(NSData *)content;
 

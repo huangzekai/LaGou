@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface LGBaseFile : NSObject
-
++ (NSString *)documentDirectory;
++ (NSString *)createPathWithName:(NSString *)name;
 @end

@@ -1,17 +1,16 @@
 //
-//  LAMyResumeService.m
+//  LGRecommendService.m
 //  LaGou
 //
-//  Created by kennyhuang on 15/5/29.
+//  Created by kennyhuang on 15/5/30.
 //  Copyright (c) 2015年 kennyhuang. All rights reserved.
 //
 
-#import "LAMyResumeService.h"
-#import "LANetInterface.h"
+#import "LGRecommendService.h"
 #import "AFNetworking.h"
-#import "LGResumeParser.h"
+#import "LANetInterface.h"
 
-@implementation LAMyResumeService
+@implementation LGRecommendService
 ///请求我的简历
 - (void)requestMyResume
 {
@@ -24,12 +23,8 @@
         NSString *htmlContent =  [[NSString alloc]initWithData:responseObject encoding:NSUTF8StringEncoding];
         NSLog(@"JSON: %@", htmlContent);
         
-        LGResumeParser *parser = [[LGResumeParser alloc]initWithHtmlContent:responseObject];
-        [parser parserMyResume];
-        
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Error: %@", error);
     }];
 }
-
 @end

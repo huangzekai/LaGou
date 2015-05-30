@@ -11,7 +11,6 @@
 #import "KNUtil.h"
 
 @interface LGBaseParser ()
-@property (nonatomic, strong) HTMLParser *parser;
 @end
 
 @implementation LGBaseParser
