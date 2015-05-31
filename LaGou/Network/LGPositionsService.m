@@ -25,6 +25,7 @@
         NSLog(@"--------%@", str);
         LGPositionParser *parser = [[LGPositionParser alloc]initWithHtmlContent:responseObject];
         NSDictionary *positions = [parser parserLGPositions];
+        [parser parserRecommandJobs];
         [LGBaseFile storagePositionData:positions];
         
     }failure:^(AFHTTPRequestOperation *operation, NSError *error) {

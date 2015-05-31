@@ -9,7 +9,7 @@
 #import "LANetInterface.h"
 
 @implementation LANetInterface
-NSString *const kLGMainUrl = @"http://www.lagou.com/?utm_source=AD__baidu_sem&utm_medium=keywords&utm_campaign=sem";
+NSString *const kLGMainUrl = @"http://www.lagou.com/?f=m";
 NSString *const kLALoginUrl = @"http://passport.lagou.com/login/login.json";
 NSString *const kLAMyResumeUrl = @"http://www.lagou.com/resume/myresume.html";
 @end

@@ -11,4 +11,5 @@
 
 @interface LGPositionParser : LGBaseParser
 - (NSDictionary *)parserLGPositions;
+- (void)parserRecommandJobs;
 @end

@@ -7,7 +7,7 @@
 //
 
 #import "DEMOMenuViewController.h"
-#import "DEMOHomeViewController.h"
+#import "LGHomeViewController.h"
 #import "DEMOSecondViewController.h"
 #import "DEMONavigationController.h"
 #import "UIViewController+REFrostedViewController.h"
@@ -92,7 +92,7 @@
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if (indexPath.section == 0 && indexPath.row == 0) {
-        DEMOHomeViewController *homeViewController = [[DEMOHomeViewController alloc] init];
+        LGHomeViewController *homeViewController = [[LGHomeViewController alloc] init];
         DEMONavigationController *navigationController = [[DEMONavigationController alloc] initWithRootViewController:homeViewController];
         self.frostedViewController.contentViewController = navigationController;
     } else {

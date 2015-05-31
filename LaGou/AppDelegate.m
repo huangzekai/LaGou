@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "DEMONavigationController.h"
-#import "DEMOHomeViewController.h"
+#import "LGHomeViewController.h"
 #import "DEMOMenuViewController.h"
 #import "LALoginService.h"
 #import "LAMyResumeService.h"
@@ -28,7 +28,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     // Create content and menu controllers
-    DEMONavigationController *navigationController = [[DEMONavigationController alloc] initWithRootViewController:[[DEMOHomeViewController alloc] init]];
+    DEMONavigationController *navigationController = [[DEMONavigationController alloc] initWithRootViewController:[[LGHomeViewController alloc] init]];
     DEMOMenuViewController *menuController = [[DEMOMenuViewController alloc] initWithStyle:UITableViewStylePlain];
     
     // Create frosted view controller
@@ -49,8 +49,8 @@
     self.myresumeService = [[LAMyResumeService alloc]init];
     [self.myresumeService requestMyResume];
     
-//    self.positionService = [[LGPositionsService alloc]init];
-//    [self.positionService requestLGPositions];
+    self.positionService = [[LGPositionsService alloc]init];
+    [self.positionService requestLGPositions];
     
     return YES;
 }
