@@ -8,6 +8,8 @@
 
 #import "LGBaseFile.h"
 
+#define kUserInfoName @"LGuserInfo"
+
 @implementation LGBaseFile
 
 + (NSString *)documentDirectory
@@ -22,6 +24,14 @@
     path = [path stringByAppendingPathComponent:name];
     
     return path;
+}
+
++ (NSString *)userInfoDirectory
+{
+    NSString *documentPath = [LGBaseFile documentDirectory];
+    NSString *userInfoPath = [documentPath stringByAppendingPathComponent:kUserInfoName];
+    NSLog(@"用户登录信息存放路径:%@",userInfoPath);
+    return userInfoPath;
 }
 
 @end

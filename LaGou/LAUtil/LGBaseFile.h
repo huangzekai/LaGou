@@ -11,4 +11,5 @@
 @interface LGBaseFile : NSObject
 + (NSString *)documentDirectory;
 + (NSString *)createPathWithName:(NSString *)name;
++ (NSString *)userInfoDirectory;
 @end

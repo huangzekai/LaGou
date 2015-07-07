@@ -10,6 +10,7 @@
 
 @implementation LANetInterface
 NSString *const kLGMainUrl = @"http://www.lagou.com/?f=m";
+//NSString *const kLGMainUrl = @"http://www.lagou.com/custom/list.html?m=1";
 NSString *const kLALoginUrl = @"http://passport.lagou.com/login/login.json";
 NSString *const kLAMyResumeUrl = @"http://www.lagou.com/resume/myresume.html";
 @end

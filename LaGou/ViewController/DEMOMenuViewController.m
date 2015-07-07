@@ -11,12 +11,22 @@
 #import "DEMOSecondViewController.h"
 #import "DEMONavigationController.h"
 #import "UIViewController+REFrostedViewController.h"
+#import "LGLoginUser+Storage.h"
+#import "UIImageView+WebCache.h"
+#import "LGGlobal.h"
 
 @implementation DEMOMenuViewController
+
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(userInfoNofitication:) name:kLoginUserInfoNotification object:nil];
     
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.separatorColor = [UIColor colorWithRed:150/255.0f green:161/255.0f blue:177/255.0f alpha:1.0f];
@@ -28,27 +38,49 @@
         UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, 184.0f)];
         UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 40, 100, 100)];
         imageView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
-        imageView.image = [UIImage imageNamed:@"avatar.jpg"];
         imageView.layer.masksToBounds = YES;
         imageView.layer.cornerRadius = 50.0;
         imageView.layer.borderColor = [UIColor whiteColor].CGColor;
         imageView.layer.borderWidth = 3.0f;
         imageView.layer.rasterizationScale = [UIScreen mainScreen].scale;
         imageView.layer.shouldRasterize = YES;
+//        imageView.contentMode = UIViewContentModeScaleAspectFill;
         imageView.clipsToBounds = YES;
+        imageView.tag = 1000;
         
-        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 150, 0, 24)];
-        label.text = @"Roman Efimov";
+        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 150, 100, 24)];
         label.font = [UIFont fontWithName:@"HelveticaNeue" size:21];
         label.backgroundColor = [UIColor clearColor];
         label.textColor = [UIColor colorWithRed:62/255.0f green:68/255.0f blue:75/255.0f alpha:1.0f];
-        [label sizeToFit];
         label.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
+        label.textAlignment = NSTextAlignmentCenter;
+        label.lineBreakMode = NSLineBreakByTruncatingTail;
+        label.tag = 1001;
         
         [view addSubview:imageView];
         [view addSubview:label];
         view;
     });
+    
+    [self setUserHeadPicture];
+}
+
+- (void)userInfoNofitication:(NSNotification *)notification
+{
+    [self setUserHeadPicture];
+}
+
+- (void)setUserHeadPicture
+{
+    LGLoginUser *userInfo = [LGLoginUser shareInstance];
+    if (userInfo.headPictureUrl.length > 0)
+    {
+        UIImageView *headPicture = (UIImageView *)[self.view viewWithTag:1000];
+        [headPicture sd_setImageWithURL:[NSURL URLWithString:userInfo.headPictureUrl] placeholderImage:nil];
+        
+        UILabel *nameLabel = (UILabel *)[self.view viewWithTag:1001];
+        nameLabel.text = userInfo.username.length > 0 ? userInfo.username : @"";
+    }
 }
 
 #pragma mark -
@@ -133,10 +165,10 @@
     }
     
     if (indexPath.section == 0) {
-        NSArray *titles = @[@"Home", @"Profile", @"Chats"];
+        NSArray *titles = @[@"城市", @"职位", @"推荐"];
         cell.textLabel.text = titles[indexPath.row];
     } else {
-        NSArray *titles = @[@"John Appleseed", @"John Doe", @"Test User"];
+        NSArray *titles = @[@"简历", @"收藏", @"消息"];
         cell.textLabel.text = titles[indexPath.row];
     }
     

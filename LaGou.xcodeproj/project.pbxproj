@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F6BC1881B31A52B00702719 /* LGPositionChoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6BC1871B31A52B00702719 /* LGPositionChoiceViewController.m */; };
 		7F78DA121B15C8EE00876801 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F78DA111B15C8EE00876801 /* main.m */; };
 		7F78DA151B15C8EE00876801 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F78DA141B15C8EE00876801 /* AppDelegate.m */; };
 		7F78DA1D1B15C8EE00876801 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F78DA1C1B15C8EE00876801 /* Images.xcassets */; };
@@ -81,9 +82,24 @@
 		7F78DB2A1B19F45D00876801 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F78DB1F1B19F45D00876801 /* View+MASAdditions.m */; };
 		7F78DB2E1B19F9AC00876801 /* LGPositionDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F78DB2C1B19F9AC00876801 /* LGPositionDetailViewController.m */; };
 		7F78DB2F1B19F9AC00876801 /* LGPositionDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F78DB2D1B19F9AC00876801 /* LGPositionDetailViewController.xib */; };
+		7F9501401B42C99D00070064 /* LGLoginUser+Storage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F95013F1B42C99D00070064 /* LGLoginUser+Storage.m */; };
+		7F95014B1B440D0000070064 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F95014A1B440D0000070064 /* GoogleMobileAds.framework */; };
+		7F95014E1B44138A00070064 /* LGGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F95014D1B44138A00070064 /* LGGlobal.m */; };
+		7F9501521B44D20600070064 /* LGResumeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F9501501B44D20600070064 /* LGResumeViewController.m */; };
+		7F9501531B44D20600070064 /* LGResumeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F9501511B44D20600070064 /* LGResumeViewController.xib */; };
+		7FA4A67A1B4BC19D006E0E5C /* MJConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA4A66A1B4BC19D006E0E5C /* MJConst.m */; };
+		7FA4A67B1B4BC19D006E0E5C /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA4A66D1B4BC19D006E0E5C /* MJFoundation.m */; };
+		7FA4A67C1B4BC19D006E0E5C /* MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA4A66F1B4BC19D006E0E5C /* MJProperty.m */; };
+		7FA4A67D1B4BC19D006E0E5C /* MJType.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA4A6711B4BC19D006E0E5C /* MJType.m */; };
+		7FA4A67E1B4BC19D006E0E5C /* NSObject+MJCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA4A6731B4BC19D006E0E5C /* NSObject+MJCoding.m */; };
+		7FA4A67F1B4BC19D006E0E5C /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA4A6751B4BC19D006E0E5C /* NSObject+MJKeyValue.m */; };
+		7FA4A6801B4BC19D006E0E5C /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA4A6771B4BC19D006E0E5C /* NSObject+MJProperty.m */; };
+		7FA4A6811B4BC19D006E0E5C /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA4A6791B4BC19D006E0E5C /* NSString+MJExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F6BC1861B31A52B00702719 /* LGPositionChoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGPositionChoiceViewController.h; sourceTree = "<group>"; };
+		7F6BC1871B31A52B00702719 /* LGPositionChoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGPositionChoiceViewController.m; sourceTree = "<group>"; };
 		7F78DA0C1B15C8EE00876801 /* LaGou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaGou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F78DA101B15C8EE00876801 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F78DA111B15C8EE00876801 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -191,10 +207,10 @@
 		7F78DAE01B1823A700876801 /* LGPosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGPosition.m; sourceTree = "<group>"; };
 		7F78DAE21B18487E00876801 /* LGPositionsService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGPositionsService.h; sourceTree = "<group>"; };
 		7F78DAE31B18487E00876801 /* LGPositionsService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGPositionsService.m; sourceTree = "<group>"; };
-		7F78DAEA1B189BA700876801 /* LGBaseFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGBaseFile.h; sourceTree = "<group>"; };
-		7F78DAEB1B189BA700876801 /* LGBaseFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGBaseFile.m; sourceTree = "<group>"; };
-		7F78DAED1B18A05400876801 /* LGBaseFile+Storage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LGBaseFile+Storage.h"; sourceTree = "<group>"; };
-		7F78DAEE1B18A05400876801 /* LGBaseFile+Storage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LGBaseFile+Storage.m"; sourceTree = "<group>"; };
+		7F78DAEA1B189BA700876801 /* LGBaseFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LGBaseFile.h; path = ../LAUtil/LGBaseFile.h; sourceTree = "<group>"; };
+		7F78DAEB1B189BA700876801 /* LGBaseFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LGBaseFile.m; path = ../LAUtil/LGBaseFile.m; sourceTree = "<group>"; };
+		7F78DAED1B18A05400876801 /* LGBaseFile+Storage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "LGBaseFile+Storage.h"; path = "../LAUtil/LGBaseFile+Storage.h"; sourceTree = "<group>"; };
+		7F78DAEE1B18A05400876801 /* LGBaseFile+Storage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "LGBaseFile+Storage.m"; path = "../LAUtil/LGBaseFile+Storage.m"; sourceTree = "<group>"; };
 		7F78DAF01B1979B400876801 /* LGResumeParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGResumeParser.h; sourceTree = "<group>"; };
 		7F78DAF11B1979B400876801 /* LGResumeParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGResumeParser.m; sourceTree = "<group>"; };
 		7F78DAF31B198E6200876801 /* LGProjectException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGProjectException.h; sourceTree = "<group>"; };
@@ -234,6 +250,31 @@
 		7F78DB2B1B19F9AC00876801 /* LGPositionDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGPositionDetailViewController.h; sourceTree = "<group>"; };
 		7F78DB2C1B19F9AC00876801 /* LGPositionDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGPositionDetailViewController.m; sourceTree = "<group>"; };
 		7F78DB2D1B19F9AC00876801 /* LGPositionDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LGPositionDetailViewController.xib; sourceTree = "<group>"; };
+		7F95013E1B42C99D00070064 /* LGLoginUser+Storage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LGLoginUser+Storage.h"; sourceTree = "<group>"; };
+		7F95013F1B42C99D00070064 /* LGLoginUser+Storage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LGLoginUser+Storage.m"; sourceTree = "<group>"; };
+		7F95014A1B440D0000070064 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = LaGou/GoogleMobileAds.framework; sourceTree = "<group>"; };
+		7F95014C1B44138A00070064 /* LGGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGGlobal.h; sourceTree = "<group>"; };
+		7F95014D1B44138A00070064 /* LGGlobal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGGlobal.m; sourceTree = "<group>"; };
+		7F95014F1B44D20600070064 /* LGResumeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGResumeViewController.h; sourceTree = "<group>"; };
+		7F9501501B44D20600070064 /* LGResumeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGResumeViewController.m; sourceTree = "<group>"; };
+		7F9501511B44D20600070064 /* LGResumeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LGResumeViewController.xib; sourceTree = "<group>"; };
+		7FA4A6691B4BC19D006E0E5C /* MJConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJConst.h; sourceTree = "<group>"; };
+		7FA4A66A1B4BC19D006E0E5C /* MJConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJConst.m; sourceTree = "<group>"; };
+		7FA4A66B1B4BC19D006E0E5C /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
+		7FA4A66C1B4BC19D006E0E5C /* MJFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJFoundation.h; sourceTree = "<group>"; };
+		7FA4A66D1B4BC19D006E0E5C /* MJFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJFoundation.m; sourceTree = "<group>"; };
+		7FA4A66E1B4BC19D006E0E5C /* MJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJProperty.h; sourceTree = "<group>"; };
+		7FA4A66F1B4BC19D006E0E5C /* MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJProperty.m; sourceTree = "<group>"; };
+		7FA4A6701B4BC19D006E0E5C /* MJType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJType.h; sourceTree = "<group>"; };
+		7FA4A6711B4BC19D006E0E5C /* MJType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJType.m; sourceTree = "<group>"; };
+		7FA4A6721B4BC19D006E0E5C /* NSObject+MJCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJCoding.h"; sourceTree = "<group>"; };
+		7FA4A6731B4BC19D006E0E5C /* NSObject+MJCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJCoding.m"; sourceTree = "<group>"; };
+		7FA4A6741B4BC19D006E0E5C /* NSObject+MJKeyValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJKeyValue.h"; sourceTree = "<group>"; };
+		7FA4A6751B4BC19D006E0E5C /* NSObject+MJKeyValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJKeyValue.m"; sourceTree = "<group>"; };
+		7FA4A6761B4BC19D006E0E5C /* NSObject+MJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJProperty.h"; sourceTree = "<group>"; };
+		7FA4A6771B4BC19D006E0E5C /* NSObject+MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJProperty.m"; sourceTree = "<group>"; };
+		7FA4A6781B4BC19D006E0E5C /* NSString+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MJExtension.h"; sourceTree = "<group>"; };
+		7FA4A6791B4BC19D006E0E5C /* NSString+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MJExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +282,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F95014B1B440D0000070064 /* GoogleMobileAds.framework in Frameworks */,
 				7F78DAB51B15CB4C00876801 /* libxml2.2.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,6 +293,7 @@
 		7F78DA031B15C8EE00876801 = {
 			isa = PBXGroup;
 			children = (
+				7F95014A1B440D0000070064 /* GoogleMobileAds.framework */,
 				7F78DA0E1B15C8EE00876801 /* LaGou */,
 				7F78DA0D1B15C8EE00876801 /* Products */,
 			);
@@ -267,6 +310,7 @@
 		7F78DA0E1B15C8EE00876801 /* LaGou */ = {
 			isa = PBXGroup;
 			children = (
+				7F9501451B42CA4600070064 /* LGFile */,
 				7F78DAC91B175B4200876801 /* Network */,
 				7F78DAC51B175A8F00876801 /* Storage */,
 				7F78DA3B1B15C97D00876801 /* Resource */,
@@ -294,6 +338,7 @@
 		7F78DA351B15C93C00876801 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				7FA4A6681B4BC19D006E0E5C /* MJExtension */,
 				7F78DB081B19F45D00876801 /* Masonry */,
 				7F78DAAA1B15CAD500876801 /* HTMLParser */,
 				7F78DA8B1B15CA3600876801 /* REFrostedViewController */,
@@ -310,10 +355,8 @@
 				7F78DACE1B175E2200876801 /* NSObject+SafeOperation.m */,
 				7F78DAB11B15CB2D00876801 /* KNUtil.h */,
 				7F78DAB21B15CB2D00876801 /* KNUtil.m */,
-				7F78DAEA1B189BA700876801 /* LGBaseFile.h */,
-				7F78DAEB1B189BA700876801 /* LGBaseFile.m */,
-				7F78DAED1B18A05400876801 /* LGBaseFile+Storage.h */,
-				7F78DAEE1B18A05400876801 /* LGBaseFile+Storage.m */,
+				7F95014C1B44138A00070064 /* LGGlobal.h */,
+				7F95014D1B44138A00070064 /* LGGlobal.m */,
 			);
 			path = LAUtil;
 			sourceTree = "<group>";
@@ -369,6 +412,11 @@
 				7F78DB2B1B19F9AC00876801 /* LGPositionDetailViewController.h */,
 				7F78DB2C1B19F9AC00876801 /* LGPositionDetailViewController.m */,
 				7F78DB2D1B19F9AC00876801 /* LGPositionDetailViewController.xib */,
+				7F6BC1861B31A52B00702719 /* LGPositionChoiceViewController.h */,
+				7F6BC1871B31A52B00702719 /* LGPositionChoiceViewController.m */,
+				7F95014F1B44D20600070064 /* LGResumeViewController.h */,
+				7F9501501B44D20600070064 /* LGResumeViewController.m */,
+				7F9501511B44D20600070064 /* LGResumeViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -488,6 +536,8 @@
 				7F78DAE01B1823A700876801 /* LGPosition.m */,
 				7F78DAF31B198E6200876801 /* LGProjectException.h */,
 				7F78DAF41B198E6200876801 /* LGProjectException.m */,
+				7F95013E1B42C99D00070064 /* LGLoginUser+Storage.h */,
+				7F95013F1B42C99D00070064 /* LGLoginUser+Storage.m */,
 			);
 			path = Storage;
 			sourceTree = "<group>";
@@ -538,6 +588,41 @@
 				7F78DB201B19F45D00876801 /* View+MASShorthandAdditions.h */,
 			);
 			path = Masonry;
+			sourceTree = "<group>";
+		};
+		7F9501451B42CA4600070064 /* LGFile */ = {
+			isa = PBXGroup;
+			children = (
+				7F78DAEA1B189BA700876801 /* LGBaseFile.h */,
+				7F78DAEB1B189BA700876801 /* LGBaseFile.m */,
+				7F78DAED1B18A05400876801 /* LGBaseFile+Storage.h */,
+				7F78DAEE1B18A05400876801 /* LGBaseFile+Storage.m */,
+			);
+			path = LGFile;
+			sourceTree = "<group>";
+		};
+		7FA4A6681B4BC19D006E0E5C /* MJExtension */ = {
+			isa = PBXGroup;
+			children = (
+				7FA4A6691B4BC19D006E0E5C /* MJConst.h */,
+				7FA4A66A1B4BC19D006E0E5C /* MJConst.m */,
+				7FA4A66B1B4BC19D006E0E5C /* MJExtension.h */,
+				7FA4A66C1B4BC19D006E0E5C /* MJFoundation.h */,
+				7FA4A66D1B4BC19D006E0E5C /* MJFoundation.m */,
+				7FA4A66E1B4BC19D006E0E5C /* MJProperty.h */,
+				7FA4A66F1B4BC19D006E0E5C /* MJProperty.m */,
+				7FA4A6701B4BC19D006E0E5C /* MJType.h */,
+				7FA4A6711B4BC19D006E0E5C /* MJType.m */,
+				7FA4A6721B4BC19D006E0E5C /* NSObject+MJCoding.h */,
+				7FA4A6731B4BC19D006E0E5C /* NSObject+MJCoding.m */,
+				7FA4A6741B4BC19D006E0E5C /* NSObject+MJKeyValue.h */,
+				7FA4A6751B4BC19D006E0E5C /* NSObject+MJKeyValue.m */,
+				7FA4A6761B4BC19D006E0E5C /* NSObject+MJProperty.h */,
+				7FA4A6771B4BC19D006E0E5C /* NSObject+MJProperty.m */,
+				7FA4A6781B4BC19D006E0E5C /* NSString+MJExtension.h */,
+				7FA4A6791B4BC19D006E0E5C /* NSString+MJExtension.m */,
+			);
+			path = MJExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -597,6 +682,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F9501531B44D20600070064 /* LGResumeViewController.xib in Resources */,
 				7F78DB2F1B19F9AC00876801 /* LGPositionDetailViewController.xib in Resources */,
 				7F78DB211B19F45D00876801 /* Info.plist in Resources */,
 				7F78DB021B19BEF900876801 /* LGHomeViewController.xib in Resources */,
@@ -618,10 +704,13 @@
 				7F78DA831B15C9F400876801 /* SDWebImagePrefetcher.m in Sources */,
 				7F78DA551B15C9C500876801 /* AFURLConnectionOperation.m in Sources */,
 				7F78DA541B15C9C500876801 /* AFSecurityPolicy.m in Sources */,
+				7F9501521B44D20600070064 /* LGResumeViewController.m in Sources */,
 				7F78DAF81B19B69300876801 /* LGRecommendService.m in Sources */,
+				7FA4A6811B4BC19D006E0E5C /* NSString+MJExtension.m in Sources */,
 				7F78DAEC1B189BA700876801 /* LGBaseFile.m in Sources */,
 				7F78DA7C1B15C9F400876801 /* NSData+ImageContentType.m in Sources */,
 				7F78DA501B15C9C500876801 /* AFHTTPRequestOperation.m in Sources */,
+				7FA4A67B1B4BC19D006E0E5C /* MJFoundation.m in Sources */,
 				7F78DB2E1B19F9AC00876801 /* LGPositionDetailViewController.m in Sources */,
 				7F78DAC81B175ADB00876801 /* LGLoginUser.m in Sources */,
 				7F78DB291B19F45D00876801 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
@@ -637,6 +726,10 @@
 				7F78DADB1B181DDC00876801 /* LGBaseParser.m in Sources */,
 				7F78DB241B19F45D00876801 /* MASConstraintMaker.m in Sources */,
 				7F78DAA91B15CA6800876801 /* DEMOSecondViewController.m in Sources */,
+				7F9501401B42C99D00070064 /* LGLoginUser+Storage.m in Sources */,
+				7FA4A67F1B4BC19D006E0E5C /* NSObject+MJKeyValue.m in Sources */,
+				7FA4A67E1B4BC19D006E0E5C /* NSObject+MJCoding.m in Sources */,
+				7F6BC1881B31A52B00702719 /* LGPositionChoiceViewController.m in Sources */,
 				7F78DA991B15CA3600876801 /* REFrostedContainerViewController.m in Sources */,
 				7F78DAA71B15CA6800876801 /* DEMOMenuViewController.m in Sources */,
 				7F78DA571B15C9C500876801 /* AFURLResponseSerialization.m in Sources */,
@@ -647,6 +740,7 @@
 				7F78DAAF1B15CAEA00876801 /* HTMLNode.m in Sources */,
 				7F78DA151B15C8EE00876801 /* AppDelegate.m in Sources */,
 				7F78DA8A1B15C9F400876801 /* UIView+WebCacheOperation.m in Sources */,
+				7FA4A6801B4BC19D006E0E5C /* NSObject+MJProperty.m in Sources */,
 				7F78DB011B19BEF900876801 /* LGHomeViewController.m in Sources */,
 				7F78DAE41B18487E00876801 /* LGPositionsService.m in Sources */,
 				7F78DAD51B177A2C00876801 /* LAMyResumeService.m in Sources */,
@@ -660,9 +754,11 @@
 				7F78DADE1B18221800876801 /* LGPositions.m in Sources */,
 				7F78DA9B1B15CA3600876801 /* UIImage+REFrostedViewController.m in Sources */,
 				7F78DA881B15C9F400876801 /* UIImageView+HighlightedWebCache.m in Sources */,
+				7FA4A67D1B4BC19D006E0E5C /* MJType.m in Sources */,
 				7F78DAB81B15D06C00876801 /* KNTMLParserManager.m in Sources */,
 				7F78DA7F1B15C9F400876801 /* SDWebImageDecoder.m in Sources */,
 				7F78DB231B19F45D00876801 /* MASConstraint.m in Sources */,
+				7FA4A67A1B4BC19D006E0E5C /* MJConst.m in Sources */,
 				7F78DAF21B1979B400876801 /* LGResumeParser.m in Sources */,
 				7F78DACC1B175B7B00876801 /* LALoginService.m in Sources */,
 				7F78DAB01B15CAEA00876801 /* HTMLParser.m in Sources */,
@@ -671,6 +767,7 @@
 				7F78DA871B15C9F400876801 /* UIImage+WebP.m in Sources */,
 				7F78DA821B15C9F400876801 /* SDWebImageManager.m in Sources */,
 				7F78DB251B19F45D00876801 /* MASLayoutConstraint.m in Sources */,
+				7F95014E1B44138A00070064 /* LGGlobal.m in Sources */,
 				7F78DA531B15C9C500876801 /* AFNetworkReachabilityManager.m in Sources */,
 				7F78DAA81B15CA6800876801 /* DEMONavigationController.m in Sources */,
 				7F78DA121B15C8EE00876801 /* main.m in Sources */,
@@ -679,6 +776,7 @@
 				7F78DA9D1B15CA3600876801 /* UIViewController+REFrostedViewController.m in Sources */,
 				7F78DA981B15CA3600876801 /* RECommonFunctions.m in Sources */,
 				7F78DA9A1B15CA3600876801 /* REFrostedViewController.m in Sources */,
+				7FA4A67C1B4BC19D006E0E5C /* MJProperty.m in Sources */,
 				7F78DAD21B17602100876801 /* LANetInterface.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -772,6 +870,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/kennyhuang/Downloads/GoogleMobileAdsSdkiOS-7.3.1",
+					"$(PROJECT_DIR)/LaGou",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -787,6 +890,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/kennyhuang/Downloads/GoogleMobileAdsSdkiOS-7.3.1",
+					"$(PROJECT_DIR)/LaGou",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,

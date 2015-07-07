@@ -7,6 +7,7 @@
 //
 
 #import "LGBaseFile+Storage.h"
+#import "LGLoginUser+Storage.h"
 
 #define kPositionStorageName @"positions.plist"
 
@@ -33,6 +34,11 @@
 {
     NSDictionary *data = [NSDictionary dictionaryWithContentsOfFile:path];
     return data;
+}
+
++ (NSString *)userDirectoryPath
+{
+    return nil;
 }
 
 @end

@@ -13,6 +13,7 @@
 #import "LALoginService.h"
 #import "LAMyResumeService.h"
 #import "LGPositionsService.h"
+#import "LGPositionChoiceViewController.h"
 
 @interface AppDelegate ()
 @property (nonatomic) LALoginService *loginService;
@@ -38,8 +39,9 @@
     frostedViewController.liveBlur = YES;
     frostedViewController.delegate = self;
     
+    LGPositionChoiceViewController *controller = [[LGPositionChoiceViewController alloc]init];
     // Make it a root controller
-    self.window.rootViewController = frostedViewController;
+    self.window.rootViewController = controller;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     

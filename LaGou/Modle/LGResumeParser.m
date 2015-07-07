@@ -8,7 +8,8 @@
 
 #import "LGResumeParser.h"
 #import "LGProjectException.h"
-#import "LGLoginUser.h"
+#import "LGLoginUser+Storage.h"
+#import "LGGlobal.h"
 
 @interface LGResumeParser ()
 @property (nonatomic, strong) LGLoginUser *loginUser;
@@ -71,6 +72,9 @@
     HTMLNode *schoolNode = [bodyNode findChildOfClass:@"ul_shenfen"];
     NSString *school = [[schoolNode findChildTag:@"li"] contents];
     self.loginUser.school = [school stringTrimWhitespace];
+    
+    [self.loginUser save];
+    [[NSNotificationCenter defaultCenter] postNotificationName:kLoginUserInfoNotification object:nil];
 }
 
 - (void)parserWorkException

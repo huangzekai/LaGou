@@ -8,9 +8,11 @@
 
 #import "LGHomeViewController.h"
 #import "LGPositionTableViewCell.h"
+#import <GoogleMobileAds/GoogleMobileAds.h>
+#import "Masonry.h"
 
 @interface LGHomeViewController ()
-
+@property (nonatomic) GADBannerView *bannerView;
 @end
 
 @implementation LGHomeViewController
@@ -18,6 +20,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.tableView.rowHeight = 80;
+
+    self.bannerView = [[GADBannerView alloc]init];
+    self.bannerView.frame = CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), 50);
+    [self.view insertSubview:self.bannerView aboveSubview:self.tableView];
+    
+    self.bannerView.adUnitID = @"ca-app-pub-3940256099942544/2934735716";
+    self.bannerView.rootViewController = self;
+    [self.bannerView loadRequest:[GADRequest request]];
+    
+    NSLog(@"-------------google admob version:%@",[GADRequest sdkVersion]);
 }
 
 #pragma mark - Table view data source
