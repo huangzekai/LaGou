@@ -7,6 +7,7 @@
 //
 
 #import "LGPositionChoiceViewController.h"
+#import "LGPositionSelectViewController.h"
 #import "LGBaseFile+Storage.h"
 #import "MJExtension.h"
 #import "KNUtil.h"
@@ -84,6 +85,7 @@
         [self.positionButton setBackgroundImage:[UIImage imageWithColor:[UIColor whiteColor]] forState:UIControlStateHighlighted];
         self.positionButton.titleLabel.font = [UIFont systemFontOfSize:14];
         self.positionButton.titleLabel.textAlignment = NSTextAlignmentLeft;
+        self.positionButton.enabled = NO;
         [self addSubview:self.positionButton];
     }
     return self;
@@ -114,7 +116,8 @@
 @interface LGPositionChoiceViewController ()<UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 @property (nonatomic, strong) UICollectionView *collectionView;
 @property (nonatomic) NSString *toyNickName;
-@property (nonatomic, strong) NSDictionary *positionDict;
+@property (nonatomic, strong) NSArray *titleArray;
+@property (nonatomic, strong) NSArray *positionArray;
 @end
 
 @implementation LGPositionChoiceViewController
@@ -136,20 +139,21 @@
     self.collectionView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     [self.view addSubview:self.collectionView];
     
-    self.positionDict = [LGBaseFile obtainPositionDict];
+    NSDictionary *positionDict = [LGBaseFile obtainPositionDict];
+    self.titleArray = [NSArray arrayWithArray:[positionDict allKeys]];
+    self.positionArray = [NSArray arrayWithArray:[positionDict allValues]];
 }
 
 #pragma mark - UICollectionViewDataSource
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
-    return [[self.positionDict allKeys] count];
+    return [self.titleArray count];
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    NSArray *positionArray = [self.positionDict allValues];
-    return [positionArray[section] count];
+    return [self.positionArray[section] count];
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
@@ -161,10 +165,9 @@
 {
     UICollectionItemView *itemView = [collectionView dequeueReusableCellWithReuseIdentifier:@"cellItemIdentifier" forIndexPath:indexPath];
     itemView.backgroundColor = [UIColor clearColor];
-    NSArray *array = [self.positionDict allValues];
-    if (indexPath.section < array.count)
+    if (indexPath.section < self.positionArray.count)
     {
-        NSArray *posArray = [array objectAtIndex:indexPath.section];
+        NSArray *posArray = [self.positionArray objectAtIndex:indexPath.section];
         if (indexPath.row < posArray.count)
         {
             NSDictionary *info = posArray[indexPath.row];
@@ -184,9 +187,17 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.section != 2)
+    if (indexPath.section < self.positionArray.count)
     {
-        
+        NSArray *posArray = [self.positionArray objectAtIndex:indexPath.section];
+        if (indexPath.row < posArray.count)
+        {
+            NSDictionary *info = posArray[indexPath.row];
+            NSArray *detailPositionArray = [NSArray arrayWithArray:[[info allValues] firstObject]];
+            
+            LGPositionSelectViewController *controller = [[LGPositionSelectViewController alloc]initWithPositionArray:detailPositionArray];
+            [self.navigationController pushViewController:controller animated:YES];
+        }
     }
 }
 
@@ -200,9 +211,8 @@
     BMCollectionHeaderView *reusableView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"header" forIndexPath:indexPath];
     reusableView.backgroundColor = [UIColor colorWithUInt:kSectionHeaderColor];
     
-    NSArray *array = [self.positionDict allKeys];
-    if (indexPath.section < array.count) {
-        reusableView.cell.textLabel.text = [array objectAtIndex:indexPath.section];
+    if (indexPath.section < self.titleArray.count) {
+        reusableView.cell.textLabel.text = [self.titleArray objectAtIndex:indexPath.section];
     }
     
     return reusableView;

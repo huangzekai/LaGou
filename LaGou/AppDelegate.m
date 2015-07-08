@@ -40,8 +40,9 @@
     frostedViewController.delegate = self;
     
     LGPositionChoiceViewController *controller = [[LGPositionChoiceViewController alloc]init];
+    UINavigationController *navController = [[UINavigationController alloc]initWithRootViewController:controller];
     // Make it a root controller
-    self.window.rootViewController = controller;
+    self.window.rootViewController = navigationController;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     

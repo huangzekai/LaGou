@@ -95,6 +95,13 @@
 		7FA4A67F1B4BC19D006E0E5C /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA4A6751B4BC19D006E0E5C /* NSObject+MJKeyValue.m */; };
 		7FA4A6801B4BC19D006E0E5C /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA4A6771B4BC19D006E0E5C /* NSObject+MJProperty.m */; };
 		7FA4A6811B4BC19D006E0E5C /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA4A6791B4BC19D006E0E5C /* NSString+MJExtension.m */; };
+		7FA4A6841B4BD5DF006E0E5C /* LGPositionSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA4A6831B4BD5DF006E0E5C /* LGPositionSelectViewController.m */; };
+		7FA4A6871B4BD994006E0E5C /* LGCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA4A6861B4BD994006E0E5C /* LGCityViewController.m */; };
+		7FA4A68A1B4C08DD006E0E5C /* KNFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA4A6891B4C08DD006E0E5C /* KNFlowView.m */; };
+		7FA4A6901B4C0E88006E0E5C /* BarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA4A68D1B4C0E88006E0E5C /* BarItem.m */; };
+		7FA4A6911B4C0E88006E0E5C /* CBStoreHouseRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA4A68F1B4C0E88006E0E5C /* CBStoreHouseRefreshControl.m */; };
+		7FA4A6941B4C104E006E0E5C /* LGDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA4A6931B4C104E006E0E5C /* LGDefine.m */; };
+		7FA4A6981B4CCE50006E0E5C /* lagou.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7FA4A6971B4CCE50006E0E5C /* lagou.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -275,6 +282,20 @@
 		7FA4A6771B4BC19D006E0E5C /* NSObject+MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJProperty.m"; sourceTree = "<group>"; };
 		7FA4A6781B4BC19D006E0E5C /* NSString+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MJExtension.h"; sourceTree = "<group>"; };
 		7FA4A6791B4BC19D006E0E5C /* NSString+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MJExtension.m"; sourceTree = "<group>"; };
+		7FA4A6821B4BD5DF006E0E5C /* LGPositionSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGPositionSelectViewController.h; sourceTree = "<group>"; };
+		7FA4A6831B4BD5DF006E0E5C /* LGPositionSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGPositionSelectViewController.m; sourceTree = "<group>"; };
+		7FA4A6851B4BD994006E0E5C /* LGCityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGCityViewController.h; sourceTree = "<group>"; };
+		7FA4A6861B4BD994006E0E5C /* LGCityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGCityViewController.m; sourceTree = "<group>"; };
+		7FA4A6881B4C08DD006E0E5C /* KNFlowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNFlowView.h; sourceTree = "<group>"; };
+		7FA4A6891B4C08DD006E0E5C /* KNFlowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNFlowView.m; sourceTree = "<group>"; };
+		7FA4A68C1B4C0E88006E0E5C /* BarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarItem.h; sourceTree = "<group>"; };
+		7FA4A68D1B4C0E88006E0E5C /* BarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarItem.m; sourceTree = "<group>"; };
+		7FA4A68E1B4C0E88006E0E5C /* CBStoreHouseRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBStoreHouseRefreshControl.h; sourceTree = "<group>"; };
+		7FA4A68F1B4C0E88006E0E5C /* CBStoreHouseRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBStoreHouseRefreshControl.m; sourceTree = "<group>"; };
+		7FA4A6921B4C104E006E0E5C /* LGDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGDefine.h; sourceTree = "<group>"; };
+		7FA4A6931B4C104E006E0E5C /* LGDefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGDefine.m; sourceTree = "<group>"; };
+		7FA4A6961B4C1118006E0E5C /* LaGou_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaGou_Prefix.pch; sourceTree = "<group>"; };
+		7FA4A6971B4CCE50006E0E5C /* lagou.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = lagou.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -338,6 +359,7 @@
 		7F78DA351B15C93C00876801 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				7FA4A68B1B4C0E7E006E0E5C /* refresh */,
 				7FA4A6681B4BC19D006E0E5C /* MJExtension */,
 				7F78DB081B19F45D00876801 /* Masonry */,
 				7F78DAAA1B15CAD500876801 /* HTMLParser */,
@@ -357,6 +379,8 @@
 				7F78DAB21B15CB2D00876801 /* KNUtil.m */,
 				7F95014C1B44138A00070064 /* LGGlobal.h */,
 				7F95014D1B44138A00070064 /* LGGlobal.m */,
+				7FA4A6921B4C104E006E0E5C /* LGDefine.h */,
+				7FA4A6931B4C104E006E0E5C /* LGDefine.m */,
 			);
 			path = LAUtil;
 			sourceTree = "<group>";
@@ -388,6 +412,8 @@
 		7F78DA391B15C93C00876801 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7FA4A6881B4C08DD006E0E5C /* KNFlowView.h */,
+				7FA4A6891B4C08DD006E0E5C /* KNFlowView.m */,
 				7F78DB031B19C50300876801 /* LGPositionTableViewCell.h */,
 				7F78DB041B19C50300876801 /* LGPositionTableViewCell.m */,
 				7F78DB051B19C50300876801 /* LGPositionTableViewCell.xib */,
@@ -417,6 +443,11 @@
 				7F95014F1B44D20600070064 /* LGResumeViewController.h */,
 				7F9501501B44D20600070064 /* LGResumeViewController.m */,
 				7F9501511B44D20600070064 /* LGResumeViewController.xib */,
+				7FA4A6821B4BD5DF006E0E5C /* LGPositionSelectViewController.h */,
+				7FA4A6831B4BD5DF006E0E5C /* LGPositionSelectViewController.m */,
+				7FA4A6851B4BD994006E0E5C /* LGCityViewController.h */,
+				7FA4A6861B4BD994006E0E5C /* LGCityViewController.m */,
+				7FA4A6961B4C1118006E0E5C /* LaGou_Prefix.pch */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -424,6 +455,7 @@
 		7F78DA3B1B15C97D00876801 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				7FA4A6971B4CCE50006E0E5C /* lagou.plist */,
 				7F78DA1C1B15C8EE00876801 /* Images.xcassets */,
 			);
 			path = Resource;
@@ -625,6 +657,17 @@
 			path = MJExtension;
 			sourceTree = "<group>";
 		};
+		7FA4A68B1B4C0E7E006E0E5C /* refresh */ = {
+			isa = PBXGroup;
+			children = (
+				7FA4A68C1B4C0E88006E0E5C /* BarItem.h */,
+				7FA4A68D1B4C0E88006E0E5C /* BarItem.m */,
+				7FA4A68E1B4C0E88006E0E5C /* CBStoreHouseRefreshControl.h */,
+				7FA4A68F1B4C0E88006E0E5C /* CBStoreHouseRefreshControl.m */,
+			);
+			path = refresh;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -688,6 +731,7 @@
 				7F78DB021B19BEF900876801 /* LGHomeViewController.xib in Resources */,
 				7F78DA1D1B15C8EE00876801 /* Images.xcassets in Resources */,
 				7F78DB071B19C50300876801 /* LGPositionTableViewCell.xib in Resources */,
+				7FA4A6981B4CCE50006E0E5C /* lagou.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -713,7 +757,9 @@
 				7FA4A67B1B4BC19D006E0E5C /* MJFoundation.m in Sources */,
 				7F78DB2E1B19F9AC00876801 /* LGPositionDetailViewController.m in Sources */,
 				7F78DAC81B175ADB00876801 /* LGLoginUser.m in Sources */,
+				7FA4A6941B4C104E006E0E5C /* LGDefine.m in Sources */,
 				7F78DB291B19F45D00876801 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				7FA4A6901B4C0E88006E0E5C /* BarItem.m in Sources */,
 				7F78DAEF1B18A05400876801 /* LGBaseFile+Storage.m in Sources */,
 				7F78DA581B15C9C500876801 /* AFURLSessionManager.m in Sources */,
 				7F78DA841B15C9F400876801 /* UIButton+WebCache.m in Sources */,
@@ -724,6 +770,7 @@
 				7F78DB221B19F45D00876801 /* MASCompositeConstraint.m in Sources */,
 				7F78DA7E1B15C9F400876801 /* SDWebImageCompat.m in Sources */,
 				7F78DADB1B181DDC00876801 /* LGBaseParser.m in Sources */,
+				7FA4A6871B4BD994006E0E5C /* LGCityViewController.m in Sources */,
 				7F78DB241B19F45D00876801 /* MASConstraintMaker.m in Sources */,
 				7F78DAA91B15CA6800876801 /* DEMOSecondViewController.m in Sources */,
 				7F9501401B42C99D00070064 /* LGLoginUser+Storage.m in Sources */,
@@ -739,6 +786,7 @@
 				7F78DAD81B181A3200876801 /* LGPositionParser.m in Sources */,
 				7F78DAAF1B15CAEA00876801 /* HTMLNode.m in Sources */,
 				7F78DA151B15C8EE00876801 /* AppDelegate.m in Sources */,
+				7FA4A6911B4C0E88006E0E5C /* CBStoreHouseRefreshControl.m in Sources */,
 				7F78DA8A1B15C9F400876801 /* UIView+WebCacheOperation.m in Sources */,
 				7FA4A6801B4BC19D006E0E5C /* NSObject+MJProperty.m in Sources */,
 				7F78DB011B19BEF900876801 /* LGHomeViewController.m in Sources */,
@@ -773,6 +821,8 @@
 				7F78DA121B15C8EE00876801 /* main.m in Sources */,
 				7F78DA7D1B15C9F400876801 /* SDImageCache.m in Sources */,
 				7F78DB061B19C50300876801 /* LGPositionTableViewCell.m in Sources */,
+				7FA4A68A1B4C08DD006E0E5C /* KNFlowView.m in Sources */,
+				7FA4A6841B4BD5DF006E0E5C /* LGPositionSelectViewController.m in Sources */,
 				7F78DA9D1B15CA3600876801 /* UIViewController+REFrostedViewController.m in Sources */,
 				7F78DA981B15CA3600876801 /* RECommonFunctions.m in Sources */,
 				7F78DA9A1B15CA3600876801 /* REFrostedViewController.m in Sources */,
@@ -875,6 +925,7 @@
 					"/Users/kennyhuang/Downloads/GoogleMobileAdsSdkiOS-7.3.1",
 					"$(PROJECT_DIR)/LaGou",
 				);
+				GCC_PREFIX_HEADER = LaGou/ViewController/LaGou_Prefix.pch;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -895,6 +946,7 @@
 					"/Users/kennyhuang/Downloads/GoogleMobileAdsSdkiOS-7.3.1",
 					"$(PROJECT_DIR)/LaGou",
 				);
+				GCC_PREFIX_HEADER = LaGou/ViewController/LaGou_Prefix.pch;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
